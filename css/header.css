@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+.header {
+  display: flex;
+  flex-direction: row;
+  height: 65px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom: 1px solid rgb(229, 229, 229);
+  z-index: 10;
+  transition: transform 0.3s ease;
+}
+
+.original-header {
+  margin: 30px 90px 0 60px;
+  transform: translateY(0);
+}
+
+.scrolled-header {
+  margin: 0;
+  transform: translateY(-100%);
+}
+
+.original-header.hide {
+  transform: translateY(-100%);
+}
+
+.scrolled-header.show {
+  transform: translateY(0);
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.login-button {
+  height: 22px;
+  margin-left: 24px;
+  cursor: pointer;
+}
+
+.like-button {
+  height: 20px;
+  margin-left: 24px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.search-button {
+  height: 20px;
+  margin-left: 24px;
+  cursor: pointer;
+}
+
+.middle-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  margin-left: 70px;
+  max-width: 500px;
+}
+
+.logo-button {
+  height: 40px;
+  width: 180px;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+.right-section {
+  margin-right: 20px;
+  width: 490px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.cart {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  color: black;
+  border: 0.5px solid lightgray;
+  border-radius: 20px;
+  padding: 6px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart img {
+  margin-right: 2px;
+  margin-top: 2px;
+}
+
+.news button,
+.events button,
+.contact button {
+  background: none;
+  border: none;
+  color: rgb(96, 96, 96);
+  padding: 5px 5px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+.view-menu-button-2-1,
+.book-table-button,
+.view-menu-button {
+  background-color: #5f8c6c;
+  color: white;
+  border: none;
+  padding: 12px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+  font-family: inherit;
+}
+
+.view-menu-button {
+  margin-left: 20px;
+}
